@@ -244,10 +244,33 @@ nav a:hover::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('images/hero_bg.png') no-repeat center center / cover;
-  opacity: 0.25;
-  filter: grayscale(20%);
+  background: url('images/IMG_0084.JPG') no-repeat center center / cover;
+  opacity: 0.22;
+  filter: grayscale(10%);
   z-index: 1;
+}
+
+/* 背景動画用スタイル */
+.hero-video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-video-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw; /* 16:9 Aspect Ratio */
+  min-height: 100vh;
+  min-width: 177.77vh; /* 16:9 Aspect Ratio */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* グラデーションオーバーレイ */
@@ -259,12 +282,12 @@ nav a:hover::after {
   width: 100%;
   height: 100%;
   background: linear-gradient(135deg, rgba(10, 30, 54, 0.95) 40%, rgba(10, 30, 54, 0.7) 100%);
-  z-index: 2;
+  z-index: 3;
 }
 
 .hero-container {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
@@ -483,13 +506,16 @@ nav a:hover::after {
 .pillar-card {
   background-color: var(--color-bg-base);
   border-radius: 12px;
-  padding: 3rem 2rem;
+  padding: 0 0 3rem 0; /* 上部の余白をなくして画像を配置 */
   text-align: center;
   position: relative;
   overflow: hidden;
   transition: var(--transition-smooth);
   border: 1px solid rgba(197, 160, 89, 0.15);
   box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pillar-card::before {
@@ -501,6 +527,7 @@ nav a:hover::after {
   height: 4px;
   background: var(--color-accent-gold);
   transition: var(--transition-smooth);
+  z-index: 3;
 }
 
 .pillar-card:nth-child(2)::before {
@@ -518,16 +545,41 @@ nav a:hover::after {
   border-color: var(--color-accent-gold);
 }
 
+.pillar-image-box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pillar-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.pillar-card:hover .pillar-image-box img {
+  transform: scale(1.05);
+}
+
 .pillar-icon-box {
   width: 60px;
   height: 60px;
-  margin: 0 auto 1.5rem;
+  margin: -30px auto 1.5rem; /* 画像の下端に半分重なるように配置 */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   color: var(--color-text-light);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pillar-content {
+  padding: 0 1.5rem;
 }
 
 .pillar-card:nth-child(1) .pillar-icon-box {
@@ -835,6 +887,76 @@ nav a:hover::after {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* 新規フォトギャラリースタイル */
+.gallery-photos-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 5rem 0 2.5rem;
+  color: var(--color-text-light);
+  letter-spacing: 0.05em;
+  font-family: var(--font-heading);
+  position: relative;
+}
+
+.gallery-photos-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent-gold);
+  margin: 0.8rem auto 0;
+}
+
+.gallery-photos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-photo-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(197, 160, 89, 0.2);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.gallery-photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.gallery-photo-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent-gold);
+  box-shadow: 0 12px 28px rgba(197, 160, 89, 0.3);
+}
+
+.gallery-photo-item:hover img {
+  transform: scale(1.08);
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 991px) {
+  .gallery-photos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-photos-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 /* ==========================================
