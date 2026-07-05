@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>開催案内 | 伝統万博2026</title>
+  <meta name="description" content="伝統万博2026の開催概要、日時、会場アクセス、ご来場チラシ情報はこちら。2026年10月12日（月・祝）、Grand Beauty B's 緑店にて開催。">
+  
+  <!-- OGP Meta Tags -->
+  <meta property="og:title" content="開催案内 | 伝統万博2026">
+  <meta property="og:description" content="伝統万博2026の開催概要、日時、会場アクセス、ご来場チラシ情報はこちら。">
+  <meta property="og:image" content="images/flyer.jpg">
+  <meta property="og:type" content="article">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       Header
+       ========================================== -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-area">
+        <div class="logo-wrapper">
+          <img src="images/logo.png" alt="伝統万博" class="header-logo-img">
+        </div>
+      </a>
+      
+      <input type="checkbox" id="menuToggleCheckbox" class="menu-toggle-checkbox">
+      <label for="menuToggleCheckbox" class="menu-toggle" id="menuToggle" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="overview.html" class="active">開催案内</a></li>
+          <li><a href="gallery.html">前回の様子</a></li>
+          <li><a href="about.html">主催・お問い合わせ</a></li>
+          <li><a href="#infoModal" class="nav-cta-btn">事前予約はこちら</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       Page Header
+       ========================================== -->
+  <section class="page-header">
+    <div class="page-header-container">
+      <h2>開催案内</h2>
+      <p class="page-header-subtitle">Tradition Expo 2026 Information</p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Overview (開催概要)
+       ========================================== -->
+  <section class="overview reveal active" id="overview">
+    <div class="overview-container">
+      <div class="overview-content-wrapper">
+        <div class="table-wrapper">
+          <table class="overview-table">
+            <tr>
+              <th>イベント名</th>
+              <td>美容万博 x 伝統万博</td>
+            </tr>
+            <tr>
+              <th>開催日時</th>
+              <td>2026年10月12日（月・祝） 10:00~16:00</td>
+            </tr>
+            <tr>
+              <th>会場</th>
+              <td>
+                Grand Beauty B's 緑店〔ヘア〕<br>
+                〒458-0011<br>
+                愛知県名古屋市緑区相川3-233<br>
+                【相生山駅徒歩7分】
+              </td>
+            </tr>
+            <tr>
+              <th>対象</th>
+              <td>小学生を中心としたファミリー層、伝統文化に関心のある若年層</td>
+            </tr>
+            <tr>
+              <th>入場料</th>
+              <td>無料</td>
+            </tr>
+            <tr>
+              <th>主催</th>
+              <td>伝統万博実行委員会</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="flyer-wrapper">
+          <a href="#flyerModal">
+            <img src="images/flyer.jpg" alt="美容万博×伝統万博 チラシ" class="flyer-img">
+          </a>
+          <p class="flyer-caption"><i class="fa-solid fa-magnifying-glass-plus"></i> 画像をクリックすると拡大します</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 和風の区切り -->
+  <div class="kasumi-divider"></div>
+
+  <!-- ==========================================
+       Footer
+       ========================================== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="伝統万博" class="footer-logo-img">
+      </div>
+      <ul class="footer-links">
+        <li><a href="#infoModal">プライバシーポリシー</a></li>
+        <li><a href="#infoModal">特定商取引法に基づく表記</a></li>
+      </ul>
+      <p class="copyright">Copyright &copy; 2026 伝統万博実行委員会 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       Mobile Sticky CTA (モバイル用最下部固定追従)
+       ========================================== -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="#infoModal" class="btn-premium">事前予約はこちら（準備中）</a>
+  </div>
+
+  <!-- ==========================================
+       Modal Dialog (事前予約・準備中モーダル)
+       ========================================== -->
+  <div class="modal" id="infoModal">
+    <div class="modal-content">
+      <a href="#" class="modal-close" id="modalClose" aria-label="閉じる">&times;</a>
+      <div class="modal-icon">
+        <i class="fa-solid fa-bell"></i>
+      </div>
+      <h4>事前予約 受付準備中</h4>
+      <p>
+        「伝統万博2026」の事前決済予約および整理券受付は、現在システムの最終調整を行っております。<br><br>
+        受付開始 of 際は、登録いただいたお知らせメールまたは公式SNSにてご案内いたします。今しばらくお待ちください。
+      </p>
+      <a href="#" class="btn-premium" id="modalConfirmBtn">了解しました</a>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       Flyer Modal (チラシ拡大モーダル)
+       ========================================== -->
+  <div class="modal" id="flyerModal">
+    <a href="#overview" class="modal-overlay-close"></a>
+    <div class="modal-content flyer-modal-content">
+      <a href="#overview" class="modal-close" aria-label="閉じる">&times;</a>
+      <img src="images/flyer.jpg" alt="チラシ拡大画像" class="flyer-large-img">
+    </div>
+  </div>
+</body>
+</html>

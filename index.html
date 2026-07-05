@@ -40,15 +40,11 @@
       
       <nav id="navMenu">
         <ul>
-          <li><a href="#vision">ビジョン</a></li>
-          <li><a href="#concept">伝統万博とは</a></li>
-          <li><a href="#community">コミュニティ</a></li>
-          <li><a href="#contents">3つの特徴</a></li>
-          <li><a href="#overview">開催概要</a></li>
-          <li><a href="#gallery">前回の熱気</a></li>
-          <li><a href="#producer">主催者</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
-          <li><a href="#infoModal" class="nav-cta-btn">事前予約はこちら</a></li>
+          <li><a href="index.html" class="active">ホーム</a></li>
+          <li><a href="overview.html">開催案内</a></li>
+          <li><a href="gallery.html">前回の様子</a></li>
+          <li><a href="about.html">主催・お問い合わせ</a></li>
+          <li><a href="overview.html#infoModal" class="nav-cta-btn">事前予約はこちら</a></li>
         </ul>
       </nav>
     </div>
@@ -370,166 +366,63 @@
   <div class="kasumi-divider"></div>
 
   <!-- ==========================================
-       Overview (開催概要)
+       Navigation Cards Section (各ページへの案内)
        ========================================== -->
-  <section class="overview reveal" id="overview">
-    <div class="overview-container">
-      <span class="section-subtitle">INFORMATION</span>
-      <h2 class="section-title">伝統万博2026 開催情報</h2>
+  <section class="nav-cards-section reveal" id="nav-cards">
+    <div class="nav-cards-container">
+      <span class="section-subtitle">GUIDE</span>
+      <h2 class="section-title">伝統万博をもっと知る</h2>
       
-      <div class="overview-content-wrapper">
-        <div class="table-wrapper">
-          <table class="overview-table">
-            <tr>
-              <th>イベント名</th>
-              <td>美容万博 x 伝統万博</td>
-            </tr>
-            <tr>
-              <th>開催日時</th>
-              <td>2026年10月12日（月・祝） 10:00~16:00</td>
-            </tr>
-            <tr>
-              <th>会場</th>
-              <td>
-                Grand Beauty B's 緑店〔ヘア〕<br>
-                〒458-0011<br>
-                愛知県名古屋市緑区相川3-233<br>
-                【相生山駅徒歩7分】
-              </td>
-            </tr>
-            <tr>
-              <th>対象</th>
-              <td>小学生を中心としたファミリー層、伝統文化に関心のある若年層</td>
-            </tr>
-            <tr>
-              <th>入場料</th>
-              <td>無料</td>
-            </tr>
-            <tr>
-              <th>主催</th>
-              <td>伝統万博実行委員会</td>
-            </tr>
-          </table>
+      <div class="nav-cards-grid">
+        <!-- 開催案内 -->
+        <div class="nav-card">
+          <div class="nav-card-img-wrapper">
+            <img src="images/flyer.jpg" alt="美容万博×伝統万博 チラシ">
+          </div>
+          <div class="nav-card-body">
+            <h3>2026年 開催案内</h3>
+            <p>
+              次回「美容万博 x 伝統万博」は2026年10月12日（月・祝）に名古屋市緑区のGrand Beauty B'sにて開催決定！日時、会場アクセス、入場情報などはこちら。
+            </p>
+            <a href="overview.html" class="btn-premium">開催案内を見る</a>
+          </div>
         </div>
 
-        <div class="flyer-wrapper">
-          <a href="#flyerModal">
-            <img src="images/flyer.jpg" alt="美容万博×伝統万博 チラシ" class="flyer-img">
-          </a>
-          <p class="flyer-caption"><i class="fa-solid fa-magnifying-glass-plus"></i> 画像をクリックすると拡大します</p>
+        <!-- 前回の様子 -->
+        <div class="nav-card">
+          <div class="nav-card-img-wrapper">
+            <img src="images/IMG_0084.JPG" alt="前回の様子">
+          </div>
+          <div class="nav-card-body">
+            <h3>前回の開催レポート</h3>
+            <p>
+              500名以上を動員した前回の熱気を、臨場感あふれるダイジェストムービーとフォトギャラリーでご紹介します。子どもたちの笑顔輝く体験の様子をご覧ください。
+            </p>
+            <a href="gallery.html" class="btn-premium">前回の様子を見る</a>
+          </div>
+        </div>
+
+        <!-- 主催・お問い合わせ -->
+        <div class="nav-card">
+          <div class="nav-card-img-wrapper">
+            <img src="images/sano_shohei.jpg" alt="佐野翔平">
+          </div>
+          <div class="nav-card-body">
+            <h3>主催者・お問い合わせ</h3>
+            <p>
+              「伝統を、日常へ。」を掲げて活動する伝統万博実行委員会代表・佐野翔平の想いやプロフィール、イベントへのお問い合わせ・ご相談窓口はこちら。
+            </p>
+            <a href="about.html" class="btn-premium">主催者・お問い合わせ</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       Video Gallery
-       ========================================== -->
-  <section class="gallery reveal" id="gallery">
-    <div class="gallery-container">
-      <span class="section-subtitle">GALLERY</span>
-      <h2 class="section-title">大盛況だった前回の様子を動画でチェック！</h2>
-      <p class="gallery-desc">
-        前回、Maker's Pier Central Parkで開催され、500名以上の動員を記録した「伝統万博2025」のダイジェストムービーです。
-        迫力ある書道パフォーマンス、息をのむ殺陣（たて）・演武、美しい三味線の音色。そして、伝統工芸アイドルによる華やかなステージや、子どもたちが真剣な表情と満面の笑顔で職人体験（染め物など）に挑戦している熱気あふれる様子を、ぜひ動画でご覧ください！
-      </p>
-      
-      <div class="video-wrapper">
-        <!-- YouTube Responsive Embed -->
-        <iframe 
-          src="https://www.youtube.com/embed/Bng7vgw5PAE" 
-          title="伝統万博2025 ダイジェストムービー" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          allowfullscreen>
-        </iframe>
-      </div>
+  <!-- 和風の区切り -->
+  <div class="kasumi-divider"></div>
 
-      <!-- 写真で見る前回の様子を追加 -->
-      <h3 class="gallery-photos-title">フォトギャラリー</h3>
-      <div class="gallery-photos-grid">
-        <div class="gallery-photo-item">
-          <img src="images/1F9BC9A7-710B-44F9-A07B-4E70499914D4.jpg" alt="墨流し染め体験をする子どもたち">
-        </div>
-        <div class="gallery-photo-item">
-          <img src="images/2025_original.5.6美容万博&amp;伝統万博-133 (1).jpg" alt="瓦作り体験で粘土をこねる女の子">
-        </div>
-        <div class="gallery-photo-item">
-          <img src="images/麦わら細工.jpg" alt="伝統工芸の麦わら細工展示">
-        </div>
-        <div class="gallery-photo-item">
-          <img src="images/IMG_0952.jpg" alt="古銭引換所に集まる人々">
-        </div>
-        <div class="gallery-photo-item">
-          <img src="images/image_original (11) (1).jpg" alt="ワークショップで粘土をこねる男の子">
-        </div>
-        <div class="gallery-photo-item">
-          <img src="images/IMG_0796.JPG" alt="兜作りワークショップに集中する子どもたち">
-        </div>
-        <div class="gallery-photo-item">
-          <img src="images/IMG_0084.JPG" alt="伝統万博の屋外ステージ">
-        </div>
-        <div class="gallery-photo-item">
-          <img src="images/2025_original.5.6美容万博&amp;伝統万博-291 (1).jpg" alt="主催・協賛ロゴが並ぶ記念撮影エリア">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       Producer Section
-       ========================================== -->
-  <section class="producer reveal" id="producer">
-    <div class="producer-container">
-      <div class="producer-photo">
-        <img src="images/sano_shohei.jpg" alt="佐野翔平 プロフィール写真">
-      </div>
-      <div class="producer-info">
-        <span class="producer-role">伝統万博実行委員会 代表</span>
-        <h3 class="producer-name">佐野 翔平 <span class="producer-birth">（1990年生まれ、静岡県出身）</span></h3>
-        <p class="producer-message">
-          「伝統を、日常へ。」を胸に、日本の伝統文化を守り、100年先の子どもたちへ伝えることを使命として活動しています。
-        </p>
-        <div class="producer-bio">
-          <h5>【略歴・実績】</h5>
-          <p>
-            火縄銃の射撃競技選手として「全日本前装銃射撃競技選手権大会（立射部門）」や「中島流古式砲術射撃大会」で優勝した実績を持つ演武者。日本武道館をはじめ全国各地、さらにはフランス・パリで開催された「Japan Expo」に招待出展するなど、国内外で広く活動。<br><br>
-            また、伝統技術を活用したブランド「伝統屋暁」を立ち上げ、近年ではデザイナー・コシノジュンコ氏との協業案件やミラノコレクションへの出展など、伝統と現代デザインを融合させる先駆者として高い評価を得ています。
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       Contact Section
-       ========================================== -->
-  <section class="contact reveal" id="contact">
-    <div class="contact-container">
-      <div class="contact-info-block">
-        <span class="section-subtitle font-normal">CONTACT</span>
-        <h3>お問い合わせ・ご相談</h3>
-        <p>
-          イベントに関するご質問、取材のお申し込みなど、お気軽にお問い合わせください。
-        </p>
-        <ul class="contact-details">
-          <li>
-            <span class="label">運営</span>
-            <span class="value">伝統万博実行委員会（NPO法人化準備室「伝統人」）</span>
-          </li>
-          <li>
-            <span class="label">メール</span>
-            <span class="value"><a href="mailto:suikyo.inc@gmail.com">suikyo.inc@gmail.com</a></span>
-          </li>
-          <li>
-            <span class="label">お電話</span>
-            <span class="value"><a href="tel:090-1745-5330">090-1745-5330</a></span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================
+    <!-- ==========================================
        Footer
        ========================================== -->
   <footer>
@@ -570,15 +463,6 @@
     </div>
   </div>
 
-  <!-- ==========================================
-       Flyer Modal (チラシ拡大モーダル)
-       ========================================== -->
-  <div class="modal" id="flyerModal">
-    <a href="#overview" class="modal-overlay-close"></a>
-    <div class="modal-content flyer-modal-content">
-      <a href="#overview" class="modal-close" aria-label="閉じる">&times;</a>
-      <img src="images/flyer.jpg" alt="チラシ拡大画像" class="flyer-large-img">
-    </div>
-  </div>
+
 </body>
 </html>
