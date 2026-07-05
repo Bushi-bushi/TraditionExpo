@@ -445,7 +445,7 @@ nav a:hover::after {
   background-color: transparent;
   border: 3px solid var(--color-primary-indigo);
   top: 20px;
-  left: calc(50% - 200px);
+  left: calc(50% - 185px);
   z-index: 2;
 }
 
@@ -453,7 +453,7 @@ nav a:hover::after {
   background-color: transparent;
   border: 3px solid var(--color-accent-vermilion);
   top: 20px;
-  right: calc(50% - 200px);
+  right: calc(50% - 185px);
   z-index: 3;
 }
 
@@ -493,14 +493,14 @@ nav a:hover::after {
 
 .venn-text-block.indigo {
   top: 20px;
-  left: calc(50% - 200px);
+  left: calc(50% - 185px);
   padding-right: 4.5rem;
   padding-left: 1.5rem;
 }
 
 .venn-text-block.vermilion {
   top: 20px;
-  right: calc(50% - 200px);
+  right: calc(50% - 185px);
   padding-left: 4.5rem;
   padding-right: 1.5rem;
 }
@@ -529,7 +529,7 @@ nav a:hover::after {
   text-align: center;
   line-height: 1;
   white-space: nowrap; /* 強制的に1行表示にし、絶対に折り返さない */
-  top: 185px; /* 交点中心である185pxに調整 */
+  top: 190px; /* 交点中心である190pxに調整 */
   left: 50%;
   transform: translateX(-50%); /* 幅に依存せず常に中央寄せ */
   z-index: 12;
