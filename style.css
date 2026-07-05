@@ -529,7 +529,7 @@ nav a:hover::after {
   text-align: center;
   line-height: 1;
   white-space: nowrap; /* 強制的に1行表示にし、絶対に折り返さない */
-  top: 135px;
+  top: 185px; /* 交点中心である185pxに調整 */
   left: 50%;
   transform: translateX(-50%); /* 幅に依存せず常に中央寄せ */
   z-index: 12;
