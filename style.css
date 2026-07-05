@@ -525,20 +525,14 @@ nav a:hover::after {
   color: var(--color-primary-indigo);
   font-family: var(--font-heading);
   font-weight: 900;
-  padding: 1rem;
-  width: 120px;
-  height: 90px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem; /* 1.4remから1.3remに微調整 */
   text-align: center;
-  line-height: 1.3;
+  line-height: 1;
+  white-space: nowrap; /* 強制的に1行表示にし、絶対に折り返さない */
   top: 135px;
-  left: calc(50% - 60px);
+  left: 50%;
+  transform: translateX(-50%); /* 幅に依存せず常に中央寄せ */
   z-index: 12;
-  text-shadow: none;
   pointer-events: auto;
 }
 
