@@ -154,20 +154,30 @@
 
       <!-- ベン図グラフィック -->
       <div class="venn-diagram-container">
-        <div class="venn-circle indigo">
-          <span class="venn-title">伝統</span>
-          <span class="venn-desc">本物の技術・工芸・芸能</span>
+        <!-- サークルレイヤー（背景） -->
+        <div class="venn-circles-layer">
+          <div class="venn-bg-circle indigo"></div>
+          <div class="venn-bg-circle vermilion"></div>
+          <div class="venn-bg-circle gold"></div>
         </div>
-        <div class="venn-circle vermilion">
-          <span class="venn-title">教育</span>
-          <span class="venn-desc">マネーリテラシー・職業体験</span>
-        </div>
-        <div class="venn-circle gold">
-          <span class="venn-title">エンタメ</span>
-          <span class="venn-desc">誰もがワクワクする体験空間</span>
-        </div>
-        <div class="venn-center-text">
-          伝統万博<br>2026
+        
+        <!-- テキストレイヤー（最前面に重ねる） -->
+        <div class="venn-texts-layer">
+          <div class="venn-text-block indigo">
+            <span class="venn-title">伝統</span>
+            <span class="venn-desc">本物の技術・工芸・芸能</span>
+          </div>
+          <div class="venn-text-block vermilion">
+            <span class="venn-title">教育</span>
+            <span class="venn-desc">マネーリテラシー・職業体験</span>
+          </div>
+          <div class="venn-text-block gold">
+            <span class="venn-title">エンタメ</span>
+            <span class="venn-desc">誰もがワクワクする体験空間</span>
+          </div>
+          <div class="venn-center-text">
+            伝統万博
+          </div>
         </div>
       </div>
 
