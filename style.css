@@ -1499,3 +1499,332 @@ footer {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+/* ==========================================
+   Vision & Story Section (ビジョンとストーリー)
+   ========================================== */
+.vision-section {
+  padding: 8rem 1.5rem;
+  background-color: var(--color-bg-white);
+}
+
+.vision-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 比較対比カード */
+.vision-comparison {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.comparison-card {
+  background-color: var(--color-bg-base);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-premium);
+  border: 1px solid rgba(197, 160, 89, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison-img-wrapper {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.comparison-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.comparison-card:hover .comparison-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+.badge-before {
+  background-color: var(--color-muted);
+}
+
+.badge-after {
+  background: linear-gradient(135deg, var(--color-accent-vermilion), #b22222);
+}
+
+.comparison-body {
+  padding: 2rem;
+}
+
+.comparison-body h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.comparison-body h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+}
+
+.before .comparison-body h3::after {
+  background-color: var(--color-muted);
+}
+
+.after .comparison-body h3::after {
+  background-color: var(--color-accent-vermilion);
+}
+
+.comparison-body p {
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+  line-height: 1.8;
+}
+
+/* 現代の城下町 */
+.vision-castle-town {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  background-color: var(--color-bg-base);
+  border-radius: 16px;
+  border: 1px solid rgba(197, 160, 89, 0.15);
+  box-shadow: var(--shadow-subtle);
+}
+
+.castle-town-content {
+  text-align: center;
+}
+
+.castle-town-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary-indigo);
+}
+
+.castle-town-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text-dark);
+}
+
+.castle-town-graphic {
+  width: 100%;
+  max-width: 550px;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-premium);
+}
+
+.graphic-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* ==========================================
+   Community Section (コミュニティセクション)
+   ========================================== */
+.community-section {
+  padding: 8rem 1.5rem;
+  background-color: var(--color-bg-white);
+}
+
+.community-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.community-story-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.community-text {
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--color-text-dark);
+}
+
+.community-media {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-premium);
+  border: 2px solid var(--color-accent-gold-light);
+}
+
+.community-img {
+  width: 100%;
+  height: auto;
+  transition: var(--transition-smooth);
+  display: block;
+}
+
+.community-media:hover .community-img {
+  transform: scale(1.03);
+}
+
+/* 次のステップアクション */
+.next-step-box {
+  margin-top: 5rem;
+  padding: 4rem 2rem;
+  background-color: var(--color-bg-base);
+  border-radius: 16px;
+  border: 1px solid rgba(197, 160, 89, 0.15);
+  box-shadow: var(--shadow-subtle);
+}
+
+.next-step-intro {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.next-step-intro h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.next-step-intro p {
+  color: var(--color-muted);
+  font-size: 1.05rem;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.action-card {
+  background-color: var(--color-bg-white);
+  padding: 2.5rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-subtle);
+  border: 1px solid rgba(197, 160, 89, 0.1);
+  transition: var(--transition-smooth);
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-premium);
+  border-color: var(--color-accent-gold);
+}
+
+.action-icon {
+  font-size: 2.5rem;
+  color: var(--color-accent-vermilion);
+  margin-bottom: 1.5rem;
+  height: 70px;
+  width: 70px;
+  background-color: rgba(230, 59, 46, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: var(--transition-smooth);
+}
+
+.action-card:hover .action-icon {
+  background-color: var(--color-accent-vermilion);
+  color: var(--color-text-light);
+}
+
+.action-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-primary-indigo);
+}
+
+.action-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+}
+
+/* ==========================================
+   PC向けレイアウト (768px以上)
+   ========================================== */
+@media (min-width: 768px) {
+  .vision-comparison {
+    flex-direction: row;
+  }
+
+  .comparison-card {
+    flex: 1;
+  }
+
+  .comparison-img-wrapper {
+    height: 300px;
+  }
+
+  .vision-castle-town {
+    flex-direction: row;
+    padding: 4rem 3rem;
+  }
+
+  .castle-town-content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .castle-town-graphic {
+    flex: 1;
+  }
+
+  .community-story-wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .community-text {
+    flex: 1;
+    text-align: left;
+  }
+
+  .community-media {
+    flex: 1.2;
+  }
+
+  .action-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .action-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
