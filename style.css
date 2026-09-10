@@ -2572,7 +2572,8 @@ nav a.active::after {
 }
 
 /* Bonsai Modal Specific Styles */
-.bonsai-modal-content {
+.bonsai-modal-content,
+.ume-modal-content {
   max-width: 720px;
   width: 92%;
   max-height: 88vh;
