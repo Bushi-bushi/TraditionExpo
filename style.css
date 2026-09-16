@@ -2571,9 +2571,13 @@ nav a.active::after {
   transform: translateX(4px);
 }
 
-/* Bonsai Modal Specific Styles */
+/* Experience Modal Specific Styles */
 .bonsai-modal-content,
-.ume-modal-content {
+.ume-modal-content,
+.kurumi-modal-content,
+.kabuto-modal-content,
+.shateki-modal-content,
+.hinawa-modal-content {
   max-width: 720px;
   width: 92%;
   max-height: 88vh;
@@ -2770,6 +2774,31 @@ nav a.active::after {
 
 .gallery-item:hover img {
   transform: scale(1.08);
+}
+
+/* Shateki & Hinawa Modal Specific Gallery Styles */
+#shatekiModal .modal-gallery-grid,
+#hinawaModal .modal-gallery-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  #shatekiModal .modal-gallery-grid,
+  #hinawaModal .modal-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+#shatekiModal .gallery-item,
+#hinawaModal .gallery-item {
+  aspect-ratio: 16 / 9;
+  background-color: #f4f0ea;
+}
+
+#shatekiModal .gallery-item img,
+#hinawaModal .gallery-item img {
+  object-fit: contain;
 }
 
 .modal-footer-btn {

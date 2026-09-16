@@ -132,7 +132,6 @@
         <div class="experience-card">
           <div class="experience-img-wrapper">
             <img src="images/IMG_2742 - Homare-en.jpeg" alt="盆栽剪定・苔はり体験 鳳真れお" class="experience-card-img">
-            <span class="experience-badge">人気プログラム</span>
           </div>
           <div class="experience-body">
             <h3>盆栽剪定・苔はり体験</h3>
@@ -159,13 +158,11 @@
         <!-- 2. くるみボタンヘアゴム作り体験 -->
         <div class="experience-card">
           <div class="experience-img-wrapper">
-            <div class="experience-img-placeholder">
-              <i class="fa-regular fa-image"></i>
-              <span>写真準備中</span>
-            </div>
+            <img src="images/Kurumi1.jpeg" alt="くるみボタンヘアゴム作り体験 和文化アトリエ 蓮" class="experience-card-img">
           </div>
           <div class="experience-body">
             <h3>くるみボタンヘアゴム作り体験</h3>
+            <p class="experience-catch">着崩れしない！ 食べれる・走れる出張着付け師</p>
             <div class="experience-meta">
               <div class="experience-meta-item">
                 <i class="fa-regular fa-clock"></i>
@@ -175,19 +172,20 @@
               <div class="experience-meta-item">
                 <i class="fa-solid fa-user"></i>
                 <span class="label">出展者:</span>
-                <span>あきちゃん</span>
+                <span>和文化アトリエ 蓮</span>
               </div>
             </div>
+            <a href="#kurumiModal" class="btn-experience-detail">
+              <span>詳細を見る</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
           </div>
         </div>
 
         <!-- 3. ダンボール兜制作 -->
         <div class="experience-card">
           <div class="experience-img-wrapper">
-            <div class="experience-img-placeholder">
-              <i class="fa-regular fa-image"></i>
-              <span>写真準備中</span>
-            </div>
+            <img src="images/Kabuto1.jpg" alt="ダンボール兜制作 伝統屋 暁" class="experience-card-img">
           </div>
           <div class="experience-body">
             <h3>ダンボール兜制作</h3>
@@ -197,17 +195,23 @@
                 <span class="label">所要時間:</span>
                 <span>30分</span>
               </div>
+              <div class="experience-meta-item">
+                <i class="fa-solid fa-user"></i>
+                <span class="label">出展者:</span>
+                <span>伝統屋 暁</span>
+              </div>
             </div>
+            <a href="#kabutoModal" class="btn-experience-detail">
+              <span>詳細を見る</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
           </div>
         </div>
 
         <!-- 4. ゴム鉄砲射的体験 -->
         <div class="experience-card">
           <div class="experience-img-wrapper">
-            <div class="experience-img-placeholder">
-              <i class="fa-regular fa-image"></i>
-              <span>写真準備中</span>
-            </div>
+            <img src="images/Shateki0.jpg" alt="ゴム鉄砲射的体験 伝統屋 暁" class="experience-card-img">
           </div>
           <div class="experience-body">
             <h3>ゴム鉄砲射的体験</h3>
@@ -217,7 +221,16 @@
                 <span class="label">所要時間:</span>
                 <span>5~10分</span>
               </div>
+              <div class="experience-meta-item">
+                <i class="fa-solid fa-user"></i>
+                <span class="label">出展者:</span>
+                <span>伝統屋 暁</span>
+              </div>
             </div>
+            <a href="#shatekiModal" class="btn-experience-detail">
+              <span>詳細を見る</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
           </div>
         </div>
 
@@ -247,23 +260,29 @@
           </div>
         </div>
 
-        <!-- 6. 火縄銃・甲冑展示 -->
+        <!-- 6. 火縄銃展示 -->
         <div class="experience-card">
           <div class="experience-img-wrapper">
-            <div class="experience-img-placeholder">
-              <i class="fa-regular fa-image"></i>
-              <span>写真準備中</span>
-            </div>
+            <img src="images/Hinawa2.jpg" alt="火縄銃展示 伝統屋 暁" class="experience-card-img">
           </div>
           <div class="experience-body">
-            <h3>火縄銃・甲冑展示</h3>
+            <h3>火縄銃展示</h3>
             <div class="experience-meta">
               <div class="experience-meta-item">
                 <i class="fa-regular fa-clock"></i>
                 <span class="label">所要時間:</span>
                 <span>随時</span>
               </div>
+              <div class="experience-meta-item">
+                <i class="fa-solid fa-user"></i>
+                <span class="label">出展者:</span>
+                <span>伝統屋 暁</span>
+              </div>
             </div>
+            <a href="#hinawaModal" class="btn-experience-detail">
+              <span>詳細を見る</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
           </div>
         </div>
 
@@ -460,6 +479,205 @@
           </div>
           <div class="gallery-item">
             <img src="images/Ume1.jpg" alt="梅干し配布 古城農園 7" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer-btn">
+        <a href="#experience" class="btn-modal-close-action">閉じる</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       Kurumi Experience Detail Modal (くるみボタン詳細モーダル)
+       ========================================== -->
+  <div class="modal experience-detail-modal" id="kurumiModal">
+    <a href="#experience" class="modal-overlay-close" aria-label="閉じる"></a>
+    <div class="modal-content kurumi-modal-content">
+      <a href="#experience" class="modal-close" aria-label="閉じる">&times;</a>
+      
+      <div class="modal-header-section">
+        <div class="modal-logo-container">
+          <img src="images/Kurumi1.jpeg" alt="和文化アトリエ 蓮" class="modal-brand-logo">
+        </div>
+        <div class="modal-title-container">
+          <span class="modal-sub-tag"><i class="fa-solid fa-scissors"></i> 和文化アトリエ 蓮</span>
+          <h3 class="modal-title">くるみボタンヘアゴム作り体験</h3>
+          <div class="modal-artist-meta">
+            <span class="artist-name">出展者：和文化アトリエ 蓮</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-catchphrase-box">
+        <i class="fa-solid fa-quote-left quote-icon-left"></i>
+        <p class="catchphrase-text">着崩れしない！ 食べれる・走れる出張着付け師</p>
+        <i class="fa-solid fa-quote-right quote-icon-right"></i>
+      </div>
+
+      <div class="modal-intro-section">
+        <h4 class="modal-section-title"><i class="fa-solid fa-book-open"></i> 出展紹介</h4>
+        <p>
+          七五三で着物を着せてもらったりと着物が身近だった私が着物を作り上げる和裁士になりました。 そして着物を着て楽しんでいくうちに｢着物って苦しい｣というお声を聞くことが多くなり、着物って苦しくないし、姿勢も綺麗になるからもっと沢山の人に着物を楽しんでもらいとの思いから着付け師へと転身。苦しくない。気崩れない。の着付けを目指し、今では苦しくない。着崩れない。とのお声をたくさんいただいています。
+        </p>
+      </div>
+
+      <div class="modal-gallery-section">
+        <h4 class="modal-section-title"><i class="fa-regular fa-images"></i> 紹介・画像ギャラリー</h4>
+        <div class="modal-gallery-grid">
+          <div class="gallery-item">
+            <img src="images/Kurumi1.jpeg" alt="くるみボタンヘアゴム作り体験 1" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Kurumi2.jpeg" alt="くるみボタンヘアゴム作り体験 2" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Kurumi3.jpeg" alt="くるみボタンヘアゴム作り体験 3" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Kurumi4.jpeg" alt="くるみボタンヘアゴム作り体験 4" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Kurumi5.jpeg" alt="くるみボタンヘアゴム作り体験 5" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer-btn">
+        <a href="#experience" class="btn-modal-close-action">閉じる</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       Kabuto Experience Detail Modal (ダンボール兜詳細モーダル)
+       ========================================== -->
+  <div class="modal experience-detail-modal" id="kabutoModal">
+    <a href="#experience" class="modal-overlay-close" aria-label="閉じる"></a>
+    <div class="modal-content kabuto-modal-content">
+      <a href="#experience" class="modal-close" aria-label="閉じる">&times;</a>
+      
+      <div class="modal-header-section">
+        <div class="modal-logo-container">
+          <img src="images/dentoya_logo.png" alt="伝統屋 暁" class="modal-brand-logo">
+        </div>
+        <div class="modal-title-container">
+          <span class="modal-sub-tag"><i class="fa-solid fa-shield-halved"></i> 伝統屋 暁</span>
+          <h3 class="modal-title">ダンボール兜制作</h3>
+          <div class="modal-artist-meta">
+            <span class="artist-name">出展者：伝統屋 暁</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-gallery-section">
+        <h4 class="modal-section-title"><i class="fa-regular fa-images"></i> 紹介・画像ギャラリー</h4>
+        <div class="modal-gallery-grid">
+          <div class="gallery-item">
+            <img src="images/Kabuto1.jpg" alt="ダンボール兜制作 1" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Kabuto2.jpg" alt="ダンボール兜制作 2" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Kabuto3.jpg" alt="ダンボール兜制作 3" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Kabuto4.jpg" alt="ダンボール兜制作 4" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Kabuto5.jpg" alt="ダンボール兜制作 5" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Kabuto6.jpg" alt="ダンボール兜制作 6" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Kabuto7.jpg" alt="ダンボール兜制作 7" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer-btn">
+        <a href="#experience" class="btn-modal-close-action">閉じる</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       Shateki Experience Detail Modal (ゴム鉄砲射的詳細モーダル)
+       ========================================== -->
+  <div class="modal experience-detail-modal" id="shatekiModal">
+    <a href="#experience" class="modal-overlay-close" aria-label="閉じる"></a>
+    <div class="modal-content shateki-modal-content">
+      <a href="#experience" class="modal-close" aria-label="閉じる">&times;</a>
+      
+      <div class="modal-header-section">
+        <div class="modal-logo-container">
+          <img src="images/dentoya_logo.png" alt="伝統屋 暁" class="modal-brand-logo">
+        </div>
+        <div class="modal-title-container">
+          <span class="modal-sub-tag"><i class="fa-solid fa-crosshairs"></i> 伝統屋 暁</span>
+          <h3 class="modal-title">ゴム鉄砲射的体験</h3>
+          <div class="modal-artist-meta">
+            <span class="artist-name">出展者：伝統屋 暁</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-gallery-section">
+        <h4 class="modal-section-title"><i class="fa-regular fa-images"></i> 紹介・画像ギャラリー</h4>
+        <div class="modal-gallery-grid">
+          <div class="gallery-item">
+            <img src="images/Shateki0.jpg" alt="ゴム鉄砲射的体験 1" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Shateki1.jpg" alt="ゴム鉄砲射的体験 2" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Shateki2.jpg" alt="ゴム鉄砲射的体験 3" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Shateki3.jpg" alt="ゴム鉄砲射的体験 4" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer-btn">
+        <a href="#experience" class="btn-modal-close-action">閉じる</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       Hinawa Experience Detail Modal (火縄銃展示詳細モーダル)
+       ========================================== -->
+  <div class="modal experience-detail-modal" id="hinawaModal">
+    <a href="#experience" class="modal-overlay-close" aria-label="閉じる"></a>
+    <div class="modal-content hinawa-modal-content">
+      <a href="#experience" class="modal-close" aria-label="閉じる">&times;</a>
+      
+      <div class="modal-header-section">
+        <div class="modal-logo-container">
+          <img src="images/dentoya_logo.png" alt="伝統屋 暁" class="modal-brand-logo">
+        </div>
+        <div class="modal-title-container">
+          <span class="modal-sub-tag"><i class="fa-solid fa-gun"></i> 伝統屋 暁</span>
+          <h3 class="modal-title">火縄銃展示</h3>
+          <div class="modal-artist-meta">
+            <span class="artist-name">出展者：伝統屋 暁</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-gallery-section">
+        <h4 class="modal-section-title"><i class="fa-regular fa-images"></i> 紹介・画像ギャラリー</h4>
+        <div class="modal-gallery-grid">
+          <div class="gallery-item">
+            <img src="images/Hinawa2.jpg" alt="火縄銃展示 1" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="images/Hinawa3.jpg" alt="火縄銃展示 2" loading="lazy">
           </div>
         </div>
       </div>
